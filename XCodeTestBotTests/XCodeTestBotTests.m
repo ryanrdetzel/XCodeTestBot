@@ -42,4 +42,8 @@
     
     XCTAssertEqualObjects(str1, str2);
 }
+
+-(void)testWidescreen{
+    XCTAssertTrue([[UIScreen mainScreen] bounds].size.height - ( double )568 < DBL_EPSILON);
+}
 @end
