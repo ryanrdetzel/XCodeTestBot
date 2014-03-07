@@ -29,7 +29,17 @@
 - (void)testExample
 {
     XCTAssertEqual(YES, YES);
-    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertEqual(YES, YES);
+    XCTAssertEqual(YES, YES);
+    XCTAssertEqual(YES, YES);
+    XCTAssertEqual(YES, YES);
+    XCTAssertEqual(YES, YES);
 }
 
+-(void)testAnother{
+    NSString *str1 = @"This is string one";
+    NSString *str2 = str1;
+    
+    XCTAssertEqualObjects(str1, str2);
+}
 @end
