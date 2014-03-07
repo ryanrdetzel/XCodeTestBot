@@ -44,6 +44,6 @@
 }
 
 -(void)testWidescreen{
-    XCTAssertTrue([[UIScreen mainScreen] bounds].size.height - ( double )568 < DBL_EPSILON);
+    XCTAssertTrue((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height==568));
 }
 @end
